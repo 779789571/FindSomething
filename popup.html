@@ -7,8 +7,19 @@
 <head>
     <meta charset="UTF-8">    
 </head>
+<SCRIPT language=JavaScript>
+    function doZoom(size){
+    document.getElementById('zoom').style.fontSize=size+'pt'
+    }
+</SCRIPT>
+ <P align=left>字体大小：[ <A 
+        href="javascript:doZoom(13)">13pt（超大）</A> <A 
+        href="javascript:doZoom(10.5)">10.5pt（中型）</A> <A 
+        href="javascript:doZoom(9)">9pt（标准）</A>
+        <A href="javascript:doZoom(6)">6pt（小）</A> ]
+    
 <body style="width:900px">
-    <div style="">
+    <div style="" id="zoom">
         <div style="width: 300px; float: left;">
             <h1>ip</h1>
             <p id="ip" style="word-break:break-word;">🈚️</p>
